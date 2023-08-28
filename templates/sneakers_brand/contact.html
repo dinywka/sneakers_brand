@@ -1,0 +1,52 @@
+{% extends "components/base.html" %} {% block main %}
+
+     <section class="form">
+        <div class="black">
+            <div class="text-black">
+                <h2>Сделайте предзаказ новой модели</h2>
+                <p>Заполните форму или позвоните нам
+                    для бесплатной консультации</p>
+                <p><a>info@mysite.ru</a></p>
+            </div>
+            <div class="form-sub">
+                <table>
+                    <form action="">
+                        <tr>
+                            <th><label for="name">Имя*</label></th>
+                            <th><label for="surname">Фамилия*</label></th>
+                        </tr>
+                        <tr>
+                            <td  class="r"><input type="text" id="name" required></td>
+                            <td><input type="text" id="surname" required></td>
+                        </tr>
+                        <tr>
+                            <th><label for="name">Эл.почта*</label></th>
+                            <th><label for="surname">Телефон*</label></th>
+                        </tr>
+                        <tr>
+                            <td class="r"><input type="text" id="e-mail" required></td>
+                            <td><input type="text" id="tel" required></td>
+                        </tr>
+                        <tr>
+                            <th><label for="name">Адрес</label></th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input class="long" type="text" id="adress" required></td>
+                        </tr>
+                        <tr>
+                            <th><label for="name">Тема</label></th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input class="long" type="text" id="theme" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" name="Отправить" id="sub"></td>
+                        </tr>
+                    </form>
+                </table>
+                <!-- <button class="submit">Отправить</button> -->
+            </div>
+        </div>
+    </section>
+
+{% endblock main %}

@@ -1,0 +1,354 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0 5%;
+}
+
+.logo-common {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.logo {
+    padding-right: 15px;
+}
+
+.logo svg{
+    width: 36px;
+    height: 31px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding-right: 10px;
+}
+
+.inner a {
+    text-decoration: none;
+    color:black;
+    font-size: 13px;
+}
+
+a:hover {
+    color: #a26028;
+}
+
+a:active {
+    color: #a26028;
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    height: 800px;
+    background-image: url(https://abrakadabra.fun/uploads/posts/2021-12/1640423012_15-abrakadabra-fun-p-krutie-oboi-na-telefon-s-krossovkami-15.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+    filter: grayscale(50%);
+}
+
+.main h2 {
+    padding-top: 200px;
+    padding-left: 60px;
+    color: white;
+    font-size: 85px;
+}
+
+.main button {
+    margin-top: 45px;
+    margin-left: 60px;
+    width: 183px;
+    height: 40px;
+}
+
+.main button:hover {
+    color: #a26028;
+}
+
+.company {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.company .image {
+    animation: fadeIn 1.5s forwards;
+    margin-top: 100px;
+    width: 1500px;
+    height: 400px;
+    background-image: url(https://abrakadabra.fun/uploads/posts/2021-12/1640423028_5-abrakadabra-fun-p-krutie-oboi-na-telefon-s-krossovkami-5.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.text {
+    width: 40%;
+    margin-top: 30px;
+    padding: 10px 50px;
+}
+
+.text h2 {
+    margin-top: 100px;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.text p {
+    font-size: 15px;
+}
+
+.text button {
+    margin-top: 35px;
+    width: 153px;
+    height: 35px;
+    background-color: black;
+    color: white;
+}
+
+.text button:hover {
+    background-color: #a26028;
+    border: none;
+    transition: 1s;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button {
+    animation: scaleAnimation 2s infinite;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.service {
+    width: 100%;
+    background-color: rgb(198, 195, 195);
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.service h2 {
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+}
+
+.images {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgs1 {
+    width: 30%;
+    height: 600px;
+    background-image: url(https://archidea.com.ua/i/69/48/63/694863/image_main/ede3b367d9c5d3e29ebc97b2ba8829ff-quality_80Xresize_crop_1Xallow_enlarge_0Xw_780Xh_478.jpg);
+}
+
+.imgs2 {
+    width: 30%;
+    height: 600px;
+    background-image: url(https://hotwalls.ru/thumbnails/lg/sovremennaya_vannaya_komnata.jpg);
+}
+
+.imgs3 {
+    width: 30%;
+    height: 600px;
+    background-image: url(https://bigfoto.name/uploads/posts/2021-12/thumbs/1640686393_2-bigfoto-name-p-interer-v-visokom-razreshenii-2.jpg);
+}
+
+.images p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 290px 0;
+}
+
+.service button {
+    display: block;
+    margin: 30px auto;
+    width: 153px;
+    height: 35px;
+    background-color: black;
+    color: white;
+}
+
+.service button:hover {
+    background-color: #a26028;
+    border: none;
+    transition: 1s;
+}
+
+.form {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.black {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding-top: 160px;
+    padding-bottom: 20px;
+}
+
+.form .text-black {
+    width: 40%;
+
+}
+
+.text-black h2 {
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.text-black p {
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.form-sub {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+}
+
+input {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid white;
+    background-color: black;
+    outline: none;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+    caret-color: white;
+    color: white;
+}
+
+input:focus {
+    border-bottom: 3px solid white;
+}
+
+input:hover {
+    border-bottom: 3px solid white;
+}
+
+input.long {
+    width: 100%;
+}
+
+th {
+    height: 15px;
+    padding-bottom: 10px;
+}
+
+td.r {
+    padding-right: 10px;
+}
+
+tr {
+    padding: 0;
+    text-align: left;
+}
+
+input#sub {
+    margin-top: 15px;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 0;
+}
+
+input#sub:hover {
+    color: bisque;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: gray;
+    text-align: center;
+
+}
+
+i {
+    font-size: 17px;
+    padding: 10px;
+}
+
+i:hover {
+    color: red;
+}
+
+.online {
+    display: flex;
+    background-color: #a26028;
+    justify-content: center;
+    gap: 7px;
+    align-items: center;
+    color: white;
+    width: 200px;
+    height: 60px;
+    position: fixed;
+    z-index: 1000000;
+    bottom: 0;
+    right: 30px;
+    font-size: 18px;
+}
